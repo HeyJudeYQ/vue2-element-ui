@@ -50,7 +50,7 @@ export default {
     }),
   },
   mounted() {
-    console.log('--------------->  我是dev分支')
+    console.log('--------------->  我是dev分支,第二次修改一下')
     if (IsPhone()) {
       this.$store.dispatch("menu/fold_menu");
     }
