@@ -50,6 +50,7 @@ export default {
     }),
   },
   mounted() {
+    console.log('--------------->  我是dev分支,第二次修改一下')
     if (IsPhone()) {
       this.$store.dispatch("menu/fold_menu");
     }
@@ -70,6 +71,7 @@ export default {
   display: flex;
   position: relative;
   background-color: var(--theme_bgColor);
+
   .left {
     width: auto;
     height: 100%;
@@ -80,9 +82,11 @@ export default {
     // position: relative;
     // z-index: 999999;
   }
+
   .left::-webkit-scrollbar {
     width: 0 !important;
   }
+
   .right {
     flex: 1;
     height: 100%;
@@ -94,6 +98,7 @@ export default {
       box-sizing: border-box;
       background-color: var(--theme_bgColor);
       position: relative;
+
       // background-color: #f7f7f7;
       .setting {
         width: 48px;
@@ -111,6 +116,7 @@ export default {
         cursor: pointer;
         z-index: 19;
       }
+
       .rightBottomContent {
         width: 100%;
         height: 100%;
@@ -144,6 +150,7 @@ export default {
   .drawerContent {
     width: 280px !important;
   }
+
   .DrawItem {
     box-sizing: border-box;
     padding: 0 18px;
