@@ -18,9 +18,9 @@ export default {
     test = null
     console.log('obj', obj)
     console.log('test', test)
-    // setTimeout(() => {
-    console.log('wmap', wmap)
-    // }, 500)
+    setTimeout(() => {
+      console.log('wmap', wmap)
+    }, 500)
   },
   methods: {
     initEdit() {
