@@ -1,5 +1,14 @@
 const routeArr = [
     {
+        path: '/editor',
+        name: 'editor',
+        component: () => import('@/views/myEditor.vue'),
+        meta: {
+            title: 'editor',
+            keepAlive: true
+        }
+    },
+    {
         path: '/commucate',
         name: 'commucate',
         component: resolve => require(['@/views/commucate.vue'], resolve),
