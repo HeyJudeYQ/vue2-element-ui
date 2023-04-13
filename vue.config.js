@@ -5,12 +5,21 @@ function resolve(dir) {
 
 const CompressionPlugin = require('compression-webpack-plugin');//引入gzip压缩插件
 
+const name = 'Vue Element-UI'
 // 引入自己写的插件
 // const myPlugin = require('./src/myplugin/myPlugin')
 
 module.exports = {
   lintOnSave: false, //是否开启eslint
   productionSourceMap: false, // 关闭源码映射
+  configureWebpack: {
+    name: name,
+    resolve: {
+      alias: {
+        '@': resolve('src')
+      }
+    }
+  },
   chainWebpack: config => {
     config.resolve.alias.set('@', resolve('src')) //配置别名
 
